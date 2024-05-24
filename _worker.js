@@ -72,7 +72,7 @@ export default {
 					};
 					case `/bestip/${userID_Path}`: {
 						const headers = request.headers;
-						const url = `https://sub.xf.free.hr/sub?host=${vless.4u2x.com}&uuid=${userID}&path=/`;
+						const url = `http://allsub.king361.cf/?host=${vless.4u2x.com}&uuid=${userID}&path=/`;
 						const bestSubConfig = await fetch(url, { headers: headers });
 						return bestSubConfig;
 					};
