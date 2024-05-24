@@ -72,7 +72,7 @@ export default {
 					};
 					case `/bestip/${userID_Path}`: {
 						const headers = request.headers;
-						const url = `https://allsub.king361.cf/?host=${request.headers.get('Host')}&uuid=${userID}&path=`;
+						const url = `https://3k.fxxk.dedyn.io/sub?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
 						const bestSubConfig = await fetch(url, { headers: headers });
 						return bestSubConfig;
 					};
