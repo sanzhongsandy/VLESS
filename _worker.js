@@ -72,7 +72,7 @@ export default {
 					};
 					case `/bestip/${userID_Path}`: {
 						const headers = request.headers;
-						const url = `https://add.king361.cf/?host=${vless.4u2x.com}&uuid=${userID}&path=`;
+						const url = `https://add.king361.cf/?host=${request.headers.get('Host')}&uuid=${userID}&path=`;
 						const bestSubConfig = await fetch(url, { headers: headers });
 						return bestSubConfig;
 					};
